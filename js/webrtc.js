@@ -219,12 +219,6 @@ var spreedPeerConnectionTable = [];
 			enableDataChannels: true,
 			nick: nick
 		});
-
-
-		webrtc.on('localScreenStopped', function() {
-			app.screensharingStopped();
-		});
-
 		OCA.SpreedMe.webrtc = webrtc;
 
 		var spreedListofSpeakers = {};
